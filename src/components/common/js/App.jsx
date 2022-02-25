@@ -3,9 +3,10 @@ import "../style/App.scss";
 import { header } from "../../../data/portfolio";
 
 const App = () => {
+  console.log(header);
   return (
     <div>
-      <Header data={header} />
+      <Header homepage={header.homepage} title={header.title} />
     </div>
   );
 };

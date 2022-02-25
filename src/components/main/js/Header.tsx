@@ -11,6 +11,7 @@ const logo = require('../../../assest/images/logo.png')
 
 const Header = ({ homepage, title }: HeaderType) => {
 
+    console.log(homepage, title);
 
     return (
         <AppBar position="static">
@@ -19,20 +20,23 @@ const Header = ({ homepage, title }: HeaderType) => {
                     <Typography
                         variant="h6"
                         noWrap
-                        component="div"
+                        component="img"
+                        src={logo}
+                        alt="logo"
                         sx={{ mr: 2, display: { xs: 'none', md: 'flex' }, height: '4rem' }}
-                    >
-                        <img src={logo} alt='logo' />
-                    </Typography>
+                    />
+
 
                     <Typography
                         variant="h6"
                         noWrap
-                        component="div"
-                        sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
+                        component="a"
+                        href={homepage ? homepage : ''}
+                        sx={{ flexGrow: 1, display: { xs: 'flex', md: 'flex' } }}
                     >
-                        LOGO
+                        {title}
                     </Typography>
+
 
                 </Toolbar>
             </Container>

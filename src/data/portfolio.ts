@@ -3,7 +3,7 @@ import { HeaderType, AboutTypes, ProjectType, ContactType} from "./portfolioType
 const header: HeaderType = {
     // all the properties are optional - can be left empty or deleted
     homepage: 'https://github.com/agarwalmohit43',
-    title: 'JS',
+    title: 'Github',
   }
   
   const about: AboutTypes = {
